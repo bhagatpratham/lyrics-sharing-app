@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+      <section className="logo">
+        <h2>Lyrics Sharing App</h2>
+        <p className="app-desc">
+          a simple and easy to use app to share song lyrics with your friends
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </section>
+      <section className="main-body">
+        <div className="search-lyrics">
+          <input placeholder="Enter track name"></input>
+          <div className="search-container">
+            <input placeholder="Enter artist name (optional)"></input>
+            <button className="search-btn">Search Lyrics</button>
+          </div>
+        </div>
+        <div className="lyrics">
+          <button className="copy-lyrics">Copy Lyrics</button>
+          <p className="display-lyrics">{"Nothing here yet"}</p>
+        </div>
+      </section>
     </div>
   );
 }
